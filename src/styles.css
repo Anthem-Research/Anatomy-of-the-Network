@@ -172,14 +172,24 @@ button:hover { border-color: rgba(24, 23, 20, 0.55); }
 .chapter h2 {
   font-size: clamp(2.25rem, 5vw, 5.4rem);
   line-height: 0.95;
-  margin: 0.7rem 0 1.6rem;
+  margin: 0.7rem 0 1.8rem;
 }
 
-.chapter p:last-child {
+.chapter-body {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.chapter-body p {
+  margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.08rem, 1.45vw, 1.35rem);
-  line-height: 1.62;
+  font-size: clamp(1.04rem, 1.35vw, 1.27rem);
+  line-height: 1.72;
   color: rgba(24, 23, 20, 0.78);
+}
+
+.chapter-body p:first-child {
+  color: rgba(24, 23, 20, 0.9);
 }
 
 footer {
@@ -213,4 +223,6 @@ footer p {
   .field-canvas { height: 66vh; border-radius: 0.85rem; }
   .chapters { padding-top: 4rem; }
   .chapter { padding: 5rem 0; }
+  .chapter-body { gap: 1rem; }
+  .chapter-body p { line-height: 1.68; }
 }
